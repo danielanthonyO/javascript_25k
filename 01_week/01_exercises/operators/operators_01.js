@@ -12,8 +12,8 @@
 6. Try the same operations with one positive and one negative number.
 */
 
-let a = 10;
-let b = 5;
+let a = 8;
+let b = 3;
 
 // - Add a and b (sum).
 let sum = a + b;
