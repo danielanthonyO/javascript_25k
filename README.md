@@ -1,5 +1,21 @@
 # Programming in JavaScript - REACT25K
 
+## Completed Tasks
+- **week_01**
+    - [x] data_types
+    - [x] operators
+    - [x] variables
+- **week_02:**
+    - [x] basic_functions
+    - [ ] numbers
+    - [ ] strings
+    - [ ] conditions
+- **week_03:**
+    - [x] github
+    - [ ] loops
+    - [ ] 8_ball
+
+# Programming in JavaScript - REACT25K
 Welcome to the JavaScript Programming Course Material repository!
 This repository contains all the resources, source code, and homework exercises for our comprehensive JavaScript programming course.
 
