@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Magic 8-Ball</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #d9caca;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 2px solid #333;
+    }
+
+    h1 {
+      color: #333;
+      margin-top: 50px;
+    }
+
+    p {
+      color: #333;
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .circle {
+      width: 200px;
+      height: 200px;
+      background-color: #007bff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>Magic 8-Ball</h1>
+  <p>Ask Magic 8-Ball a yes or no question and click the button to reveal the answer!</p>
+
+  <div class="circle">
+  <button onclick="magic8Ball()">Click Here</button>
+</div>
+</div>
+
+  <script>
+    function magic8Ball() {
+      // Ask or prompt the user for a "Yes or No" question
+      const question = prompt("Ask the Magic 8-Ball a Yes or No question:");
+
+      // Log the question to the console
+      console.log(`Question: ${question}`);
+
+      // Generate a random number between 1 and 8
+      const randomNumber = Math.floor(Math.random() * 8) + 1;
+
+      // Use a switch statement to determine the answer
+      let answer;
+      switch (randomNumber) {
+        case 1:
+          answer = "Yes, definitely!";
+          break;
+        case 2:
+          answer = "It is certain.";
+          break;
+        case 3:
+          answer = "Reply hazy, try again.";
+          break;
+        case 4:
+          answer = "Ask again later.";
+          break;
+        case 5:
+          answer = "Better not tell you now.";
+          break;
+        case 6:
+          answer = "My sources say no.";
+          break;
+        case 7:
+          answer = "Outlook not so good.";
+          break;
+        case 8:
+          answer = "Signs point to yes.";
+          break;
+        default:
+          answer = "Error: Unable to generate an answer.";
+      }
+
+      // Log the answer to the console and display it in an alert
+      console.log(`Answer: ${answer}`);
+      alert(`Magic 8-Ball says: ${answer}`);
+    }
+  </script>
+</body>
+</html>
