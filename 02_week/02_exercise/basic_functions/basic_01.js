@@ -6,3 +6,5 @@ Print the result using console.log().
 
 Bonus: Call the function multiple times with different arguments and print all the results.
 */
+
+// Solution
