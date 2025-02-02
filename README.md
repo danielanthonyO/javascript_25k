@@ -7,15 +7,20 @@
     - [x] data_types
     - [x] operators
     - [x] variables
+
 - **week_02:**
     - [x] basic_functions
-    - [ ] numbers
+    - [x] conditions
+    - [x] numbers
     - [ ] strings
-    - [ ] conditions
+
 - **week_03:**
     - [x] github
+    - [x] 8_ball
+    - [x] loops
+    
+- **week_04:**
     - [ ] loops
-    - [ ] 8_ball
 
 
 
