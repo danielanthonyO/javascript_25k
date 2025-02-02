@@ -5,4 +5,7 @@ Create a new variable named description and combine animalType and animalName in
 Use console.log() to print the value of description. 
 */
 
-
+let animalType = "cat"
+let animalName = "Whiskers"
+let description = `The ${animalType} is named ${animalName}.`;
+console.log(description);
