@@ -8,3 +8,22 @@ Print the results using console.log() with messages:
 "The integer is 42."
 "The floating-point number is 3.14."
 */
+
+// solution
+let numString1 = "42";
+let numString2 = "3.14";
+
+console.log(typeof numString1)
+console.log(typeof numString2)
+console.log("----------")
+
+numString1 = parseInt(numString1)
+console.log(numString1)
+console.log(`The integer is ${numString1}`)
+console.log(typeof numString1)
+console.log("----------")
+
+numString2 = parseFloat(numString2)
+console.log(`The floating-point number is ${numString2}`)
+console.log(numString2)
+console.log(typeof numString2)

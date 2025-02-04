@@ -11,3 +11,6 @@ NaN (if the addition involves invalid input).
 10 (if both inputs are valid numbers).
 
 */
+// solution
+let num1 = "10";
+let num2 = "notANumber";
