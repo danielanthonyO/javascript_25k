@@ -1,19 +1,30 @@
 # Programming in JavaScript - REACT25K
 
+# GitHub JavaScript repo: https://github.com/danielanthonyO/JS_4REACT25K
+
 ## Completed Tasks
 - **week_01**
     - [x] data_types
     - [x] operators
     - [x] variables
+
 - **week_02:**
     - [x] basic_functions
-    - [ ] numbers
+    - [x] conditions
+    - [x] numbers
     - [ ] strings
-    - [ ] conditions
+
 - **week_03:**
     - [x] github
+    - [x] 8_ball
+    - [x] loops
+    
+- **week_04:**
     - [ ] loops
-    - [ ] 8_ball
+
+
+
+
 
 # Programming in JavaScript - REACT25K
 Welcome to the JavaScript Programming Course Material repository!

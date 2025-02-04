@@ -7,3 +7,16 @@
 "The smallest number is 7." 
 
 */
+
+// solution
+let a = 12;
+let b = 7;
+let c = 20;
+
+let findMax = Math.max(a, b, c);
+console.log(findMax);
+console.log(`The largest number is ${findMax}.`)
+
+let findMin = Math.min(a, b, c);
+console.log(findMin);
+console.log(`The smallest number is ${findMin}`);

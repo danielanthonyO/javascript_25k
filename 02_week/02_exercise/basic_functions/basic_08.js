@@ -7,3 +7,10 @@ Print the result using console.log().
 Hint: Use .toFixed().
 
 */
+
+function roundNumber(num, precision){
+    return num.toFixed(precision);
+}
+
+result = roundNumber(19.56789, 2);
+console.log(result);

@@ -32,3 +32,15 @@ const logOddNumbers3 = () => {
         console.log(i);
     }
 }
+
+
+
+function see () {
+    result = ""
+    for (let i = 2, j = 98; i < j; i +=2, j -=2 ){
+        result = `${i},${j} `;
+        console.log(result);
+    }
+}
+
+see();

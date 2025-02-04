@@ -11,3 +11,12 @@ NaN (if the addition involves invalid input).
 10 (if both inputs are valid numbers).
 
 */
+// solution
+let num1 = "10";
+let num2 = "notANumber";
+num1 = parseFloat(num1);
+num2 = parseFloat(num2);
+
+console.log(num1)
+console.log(num2)
+console.log(num1 + num2)
