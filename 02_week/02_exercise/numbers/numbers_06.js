@@ -3,3 +3,10 @@
 2. Multiply the result by 10 and use Math.floor() to round it down to the nearest whole number.
 3. Print the random number using console.log() with a message like: "Your random number is 4." 
 */
+
+// solution
+let roundedNum = Math.random(0, 1);
+let result = roundedNum * 10;
+let resultFinal = Math.floor(result);
+console.log(resultFinal);
+console.log(`Your random number is ${resultFinal}.`);
