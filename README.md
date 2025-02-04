@@ -1,6 +1,7 @@
 # Programming in JavaScript - REACT25K
 
-# GitHub JavaScript repo: https://github.com/danielanthonyO/JS_4REACT25K
+## GitHub JavaScript repo: 
+## https://github.com/danielanthonyO/JS_4REACT25K
 
 ## Completed Tasks
 - **week_01**
@@ -12,7 +13,7 @@
     - [x] basic_functions
     - [x] conditions
     - [x] numbers
-    - [ ] strings
+    - [x] strings
 
 - **week_03:**
     - [x] github
@@ -20,7 +21,7 @@
     - [x] loops
     
 - **week_04:**
-    - [ ] loops
+    - [ ] basic_DOM
 
 
 
