@@ -4,3 +4,8 @@ Print the updated string using console.log().
 Example output:
 "I like bananas."
  */
+
+// solution
+let text = "I like apples.";
+let newUpdate = text.replace("apples", "bananas");
+console.log(newUpdate);
