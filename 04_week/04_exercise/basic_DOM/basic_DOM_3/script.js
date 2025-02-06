@@ -5,16 +5,27 @@ Write JavaScript to:
 - Use the input event for real-time updates.
 */
 
-// NOT READY
+// another way, first // access input field
+const inputField = document.getElementById('inputField');
+const displayText = document.getElementById('displayText');
+
+const updateDisplayText = () => {
+    displayText.innerText = inputField.value;
+}
+// add even listener
+inputField.addEventListener('input', updateDisplayText);
+
+
+// input comes as a string then we can change it to number or others
+// working with input use event.target.value
+// target input in real time
+
+// NOT READY - another way of solving it.
 function displayText(event) {
     document.getElementById("liveOut").textContent =
     "You typed: " + event.target.value;
 }
     document.getElementById("liveText").addEventListener("input", displayText);
-
-
-// working with input use event.target.value
-// target input in real time
 
 // const liveText = document.querySelector('liveText');
 // const displayText = document.querySelector("displayText");
