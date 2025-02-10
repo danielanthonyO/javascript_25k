@@ -1,22 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-</head>
 
-<body>
     <!-- first example -->
-    <h1>Fruit</h1>
-    <ul id="fruitlist">
-    <li></li>
-    <li></li>
-    <li></li>
-    </ul>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Centered Card</title>
+        <style>
+            /* Reset default margin & padding */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+    
+            /* Full-page styling */
+            body {
+                display: flex;
+                justify-content: center;  /* Centers horizontally */
+                align-items: center;      /* Centers vertically */
+                height: 100vh;            /* Full viewport height */
+                background-color: #f0f0f0; /* Light gray background */
+            }
+    
+            /* Card Styling */
+            .card {
+                width: 300px;
+                height: 250px;
+                padding: 20px;
+                background: white;
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+                text-align: center;
+            }
+    
+            /* Card Title */
+            .card h2 {
+                margin-bottom: 10px;
+                color: #333;
+            }
+    
+            /* Button */
+            .card button {
+                margin-top: 20px;
+                padding: 10px 15px;
+                border: none;
+                background: #007bff;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+    
+            .card button:hover {
+                background: #0056b3;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <div class="card">
+            <h2>My Card</h2>
+            <input type="text">
+            <button>Click Me</button>
+            <input type="text">
+            <button>Click Me</button>
+        </div>
+    
 
-    <input type="text" id="fruitinput" placeholder="enter fruit" />
-    <button id="addfruit" onclick="retrieve()">Add fruit</button>
+    
 
     <!-- second example -->
     <script src="main.js"></script>

@@ -7,7 +7,6 @@ const message = document.getElementById('message');
 const inputDeposit = document.getElementById('deposit');
 const inputWithdraw = document.getElementById('withdraw');
 
-
 let currentBalance = 0;
 // call back function
 
