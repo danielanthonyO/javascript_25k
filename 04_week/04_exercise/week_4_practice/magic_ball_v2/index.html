@@ -8,7 +8,8 @@
         /* General page styling */
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #40c6ee, #60a490);
+            /* background: linear-gradient(to right, #40c6ee, #60a490); */
+            background-color: #fff;
             color: #0d0b0b;
             text-align: center;
             display: flex;
@@ -21,10 +22,11 @@
 
         /* Container for the 8-Ball and input */
         .container {
-            background: rgba(141, 144, 145, 0.1);
+            background-color: rgba(0, 201, 255, 0.1);
+            background-color: rgb(0, 201, 255);
             padding: 30px;
             border-radius: 20px;
-            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
             width: 400px;
             text-align: center;
             backdrop-filter: blur(10px);
@@ -32,8 +34,8 @@
 
         /* Magic 8-Ball styling */
         .magic-ball {
-            width: 150px;
-            height: 150px;
+            width: 50px;
+            height: 50px;
             background: #2f2e2e;
             border-radius: 50%;
             display: flex;
@@ -68,7 +70,7 @@
             padding: 12px;
             border-radius: 8px;
             border: none;
-            margin-bottom: 20px;
+            margin-top: 60px;
             text-align: center;
             font-size: 16px;
             background: rgba(255, 255, 255, 0.9);
@@ -78,7 +80,9 @@
         /* Button styling */
         button {
             background: #00C9FF;
+            background: #2f2e2e;
             color: #fff;
+            margin-top: 20px;
             padding: 12px 24px;
             border: none;
             font-size: 16px;
@@ -126,7 +130,7 @@
         </div>
         <input type="text" id="question" placeholder="Ask a Yes/No question">
         <br>
-        <button onclick="magic8Ball()">Ask the Magic 8-Ball</button>
+        <button onclick="magic8Ball()">Click here</button>
         
         <!-- Answer display below the ball -->
         <div id="answer-box" class="answer-box"></div>
