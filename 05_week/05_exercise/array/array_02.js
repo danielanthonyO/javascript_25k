@@ -1,19 +1,23 @@
 // Exercise 1: Determine array length and conditional check
 let myAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
-
 /*
 Create a function called myAlphabetLength that logs the length of the myAlphabet array.
 If the length is 5 or more, log: "Array length is sufficient".
 Otherwise, log: "Array length is too short."
 */
-// Write your function here
-// solution one ************************
-function myAlphabetLength1() {
-    console.log(myAlphabet.length >= 5 ? 'Array length is sufficient' : 'Array length is too short');
-}
-myAlphabetLength1(); // Output: Array length is sufficient
+// ***************************************************
+// Write your function here 
+// ***************************************************
 
-// solution two ************************
+// solution one 
+// **************************************
+// function myAlphabetLength1() {
+//     console.log(myAlphabet.length >= 5 ? 'Array length is sufficient' : 'Array length is too short');
+// }
+// myAlphabetLength1(); // Output: Array length is sufficient
+
+// solution two 
+// **************************************
 // let myAlphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
 function myAlphabetLength2() {
     if (myAlphabet.length >= 5) {
@@ -24,22 +28,24 @@ function myAlphabetLength2() {
 }
 myAlphabetLength2(); // Output: Array length is sufficient
 
-// solution three ************************
-let myAlphabet3 = ['A', 'B', 'C', 'D'];
-function myAlphabetLength3(myAlphabet3) {
-    if (myAlphabet3.length >= 5) {
-        console.log('Array length is sufficient');
-    } else {
-        console.log('Array length is too short');
-    }
-}
-myAlphabetLength3(myAlphabet3); // Output: Array length is sufficient
+// solution three 
+// **************************************
+// let myAlphabet3 = ['A', 'B', 'C', 'D'];
+// function myAlphabetLength3(myAlphabet3) {
+//     if (myAlphabet3.length >= 5) {
+//         console.log('Array length is sufficient');
+//     } else {
+//         console.log('Array length is too short');
+//     }
+// }
+// myAlphabetLength3(myAlphabet3); // Output: Array length is sufficient
 
 
 
+// ***************************************************
 // Exercise 2: Iterate over the planets array and log each planet with its index
+// ***************************************************
 const planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter'];
-
 /*
 Log each planet in the planets array along with its index.
 Expected outcome:
@@ -48,12 +54,28 @@ Expected outcome:
 "Planet: Jupiter, Index: 4"
 */
 // Write your code here
+// solution 1 ********************************************
+// let planetIndexArray = planets.reduce((acc, planet, index) => {
+//     acc.push(`Planet: ${planet}, Index: ${index}:`);
+//     return acc;
+// }, []);
+
+// console.log(planetIndexArray);
+
+// solution 2 *********************************************** 
+// planets.map((planet, index) => console.log(`${index}: ${planet}`));
+
+// solution 3 *************************************
+// planets.forEach((planet, index) => {
+//     console.log(`Planet: ${planet}, Index: ${index}:`);
+// });
 
 
 
+// *****************************************************************
 // Exercise 3: Log array items with their types using mixedValues array
+// ******************************************************************
 const mixedValues = [42, 'Hello', true, { name: 'Fox' }, null, undefined];
-
 /*
 Iterate over the mixedValues array, logging each item, its index, and data type.
 Expected outcome:
@@ -62,21 +84,63 @@ Expected outcome:
 "Item: undefined, Index: 5, Type: undefined"
 */
 // Write your code here
+// solution one ************************************
+// mixedValues.forEach((item, indexes) => {
+//     console.log(`Item: ${item}, Index: ${indexes}, Type: ${typeof item}`)
+// });
+
+// solution two
+// mixedValues.reduce((_, item, index) => {
+//     console.log(`Item: ${item}, Index: ${index}, Type: ${typeof item}`);
+// }, null);
+
+// solution three
+mixedValues.map((item, index) => {
+    console.log(`Item: ${item}, Index: ${index}, Type: ${typeof item}`);
+});
+
+// solution four
+mixedValues.reduce((acc, item, index) => {
+    console.log(`Item: ${item}, Index: ${index}, Type: ${typeof item}`);
+    return acc; // Returning acc to maintain the reduce structure
+}, null);
 
 
 
+// *********************************************************
 // Exercise 4: Log each item of myArr without using a loop
+// ***********************************************************
 let myArr = [1, 'Dog', 3.14, false];
-
 /*
 Log each item in myArr without explicitly using a loop.
 Expected outcome: 1, "Dog", 3.14, false
 */
 // Write your code here
+// solution 1
+console.log(myArr.map(item => item).join(' '));
+
+// solution 2
+console.log(myArr.reduce((acc, item) => acc + ' ' + item, '').trim());
+
+//  solution 3
+myArr.reduce((_, item) => {console.log(item);}, null);
+
+// solution 4
+function logItems(arr, index = 0, result = '') {
+    if (index < arr.length) {
+        result += arr[index] + ' ';
+        logItems(arr, index + 1, result);
+    } else {
+        console.log(result.trim());
+    }
+}
+
+logItems(myArr);
 
 
-
+// ***************************************************************
 // Exercise 5: Find common animal species between reserve1Animals and reserve2Animals
+// ****************************************************************
 let reserve1Animals = ['Fox', 'Deer', 'Owl', 'Bear'];
 let reserve2Animals = ['Bear', 'Wolf', 'Eagle', 'Fox'];
 
