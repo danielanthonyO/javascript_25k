@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Page Background */
+        body {
+            background-color: #215E44; /* Greenish Background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Container */
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Form Heading */
+        .signup-form h2 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        .signup-form p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Input Fields */
+        .signup-form label {
+            display: block;
+            text-align: left;
+            font-size: 14px;
+            margin: 5px 0;
+            color: #444;
+        }
+
+        .signup-form input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        /* Sign Up Button */
+        .signup-form button {
+            width: 100%;
+            background-color: #FF7F50; /* Orange Button */
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .signup-form button:hover {
+            background-color: #FF5722; /* Darker Orange */
+        }
+
+        /* Terms & Conditions */
+        .terms {
+            font-size: 12px;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .terms a {
+            color: #FF7F50;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        /* Login Link */
+        .login-link {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .login-link a {
+            color: #E76F51;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form class="signup-form">
+            <h2>Sign Up</h2>
+            <p>It's free and only takes a minute</p>
+
+            <label for="first-name">First name</label>
+            <input type="text" id="first-name" placeholder="">
+
+            <label for="last-name">Last name</label>
+            <input type="text" id="last-name" placeholder="">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="">
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="">
+
+            <button type="submit">SIGN UP</button>
+
+            <p class="terms">
+                By clicking the Sign Up button, you agree to our 
+                <a href="#">Terms & Conditions</a> and 
+                <a href="#">Privacy Policy</a>
+            </p>
+
+            <p class="login-link">
+                Already have an account? <a href="#">Login Here</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+</html>
