@@ -21,7 +21,12 @@
     - [x] loops
     
 - **week_04:**
-    - [ ] basic_DOM
+    - [x] basic DOM
+    - [x] ATM simulator
+    - [x] pancake maker
+    - [x] forms
+- **week_05:**
+    - [x] array1
 
 
 
