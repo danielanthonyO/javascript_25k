@@ -11,8 +11,7 @@ let animals = []; // Empty array
 function addAnimal() {
     let animal = newAnimalName.value.trim();
     
-    if (animal) { 
-        // Add items
+    if (animal ) { 
         animals.push(animal); 
         const newItem = document.createElement("li");
         newItem.textContent = animal;
