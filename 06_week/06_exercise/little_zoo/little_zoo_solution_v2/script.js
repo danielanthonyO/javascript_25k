@@ -60,4 +60,4 @@ sortButton.addEventListener('click', sortAnimal);
 
 
 // calling functions should be in last line on loading
-displayAnimals(animalSimple);
+displayAnimals(animalSimple)
