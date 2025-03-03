@@ -22,12 +22,13 @@ function checkWeather(weather) {
 checkWeather(weather);
 console.log("==============================================");
 
+
 /* Task 2
 Define an object named `shoppingCart` that contains an array of items.
 Each item has `name`, `price`, and `quantity`.
 Write a function that calculates the total price of all items in the cart.
 */
-// Your code here
+// Your code here ****************************************************
 // Define the shoppingCart object
 const shoppingCart = {
   items: [
@@ -49,7 +50,8 @@ function calculateTotal(cart) {
 const totalPrice = calculateTotal(shoppingCart);
 console.log(`Total Price: $${totalPrice.toFixed(2)}`);
 
-// another way
+
+// another way **************************************************
 // Define the shoppingCart object
 const shoppingCart1 = {
   items: [
@@ -72,12 +74,13 @@ function calculateTotal(cart) {
 const totalPrice1 = calculateTotal(shoppingCart);
 console.log(`Total Price: $${totalPrice.toFixed(2)}`);
 
+
+
 /* Task 3
 Create an array of objects named `restaurants`, each with properties `name`, `cuisineType`, and `rating`.
 Write a function that returns only the restaurants with a rating of 4 or higher.
 */
-// Your code here
-// *****************************************************
+// Your code here *****************************************************
 // Array of restaurants
 const restaurants = [
   { name: "Sushi Place", cuisineType: "Japanese", rating: 4.5 },
@@ -96,12 +99,13 @@ function getTopRatedRestaurants(restaurants) {
 const topRated = getTopRatedRestaurants(restaurants);
 console.log(topRated);
 
+
+
 /* Task 4
 Define an object named `bankAccount` with properties `accountHolder`, `balance`, and `transactions` (an array of numbers).
 Write a function that calculates the total balance after all transactions.
 */
-// Your code here
-// *******************************************************
+// Your code here *******************************************************
 // Define the bankAccount object
 const bankAccount = {
   accountHolder: "John Doe",
@@ -111,7 +115,6 @@ const bankAccount = {
 
 // Function to calculate the total balance after all transactions
 function calculateTotalBalance(account) {
-  // Reduce the transactions array to calculate the new balance by adding each transaction to the initial balance
   return account.transactions.reduce(
     (total, transaction) => total + transaction,
     account.balance
@@ -151,20 +154,80 @@ Create an array `students` where each student has `name`, `scores` (array of num
 Write a function that calculates and updates each student's `averageScore`.
 */
 // Your code here
+// *********************************************************
+// Create an array of students
+let students = [
+  { name: "Alice", scores: [80, 80, 80], averageScore: null },
+  { name: "Bob", scores: [70, 70, 70], averageScore: null },
+  { name: "Charlie", scores: [90, 90, 90], averageScore: null }
+];
+
+// Function to calculate average score
+function calculateAverage(studentsArray) {
+  studentsArray.forEach(student => {
+      let total = student.scores.reduce((sum, score) => sum + score, 0);
+      student.averageScore = total / student.scores.length;
+  });
+}
+
+// Call the function to update average scores
+calculateAverage(students);
+
+// Display the updated students array
+console.log(students);
+console.log('=========================================');
+
+
 
 /* Task 6
 Define an array named `courses`, each containing `courseName`, `instructor`, and `studentsEnrolled`.
 Write a function that logs the course name of any course with more than 30 students.
 */
-
 // Your code here
+// Define an array of courses
+// let courses = [
+//   { courseName: "Mathematics", instructor: "Dr. Smith", studentsEnrolled: 25 },
+//   { courseName: "Physics", instructor: "Dr. Johnson", studentsEnrolled: 35 },
+//   { courseName: "Computer Science", instructor: "Prof. Allen", studentsEnrolled: 40 },
+//   { courseName: "History", instructor: "Dr. Brown", studentsEnrolled: 20 }
+// ];
+
+// function logLargeCourses(courses) {
+//   courses.forEach(course => {
+//       if (course.studentsEnrolled > 30) {
+//           console.log(course.courseName);
+//       }
+//   });
+// }
+
+// Step 3: Call the function
+// let logCourse = logLargeCourses(courses)
+// console.log(logCourse);
+console.log('==========================================');
+
+
 
 /* Task 7
 Create an object `pet` with properties `species`, `name`, and `isVaccinated`.
 Write a function that returns `"Vaccination required"` if the pet is not vaccinated.
 */
-
 // Your code here
+// **************************************************************
+// const pet = {
+//   species: '',
+//   name: '',
+//   isVaccinated: 'false'
+// }
+
+// function checkVaccination () {
+//   if (isVaccinated){
+//     console.log('Vaccination required');
+//   }
+// }
+
+// checkVaccination ();
+
+
 
 /* Task 8
 Define an object named `city` with properties `name`, `population`, and `landmark`.

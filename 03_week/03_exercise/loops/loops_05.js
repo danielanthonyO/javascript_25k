@@ -29,3 +29,4 @@ const calculateAverageUntilZero = () => {
 };
 
 calculateAverageUntilZero();
+console.log('=============================================');
