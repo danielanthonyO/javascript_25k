@@ -2,36 +2,154 @@
 Create an object `weather` that contains properties `temperature`, `humidity`, and `condition` (e.g., "Sunny", "Rainy").
 Write a function that logs `"Take an umbrella!"` if it's rainy.
 */
-
 // Your code here
+// ******************************************************
+// Define the weather object
+const weather = {
+  temperature: 22, // example temperature in Celsius
+  humidity: 60, // example humidity percentage
+  condition: "Rainy", // example condition
+};
+
+// Function to log a message based on the weather condition
+function checkWeather(weather) {
+    if (weather.condition === "Rainy") {
+    console.log("Take an umbrella!");
+}
+}
+
+// Call the function with the weather object
+checkWeather(weather);
+console.log("==============================================");
 
 /* Task 2
 Define an object named `shoppingCart` that contains an array of items.
 Each item has `name`, `price`, and `quantity`.
 Write a function that calculates the total price of all items in the cart.
 */
-
 // Your code here
+// Define the shoppingCart object
+const shoppingCart = {
+  items: [
+    { name: "Apple", price: 1.2, quantity: 3 },
+    { name: "Banana", price: 0.5, quantity: 5 },
+    { name: "Orange", price: 0.8, quantity: 2 },
+  ],
+};
+
+// Function to calculate the total price of all items in the cart using reduce
+function calculateTotal(cart) {
+  return cart.items.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
+}
+
+// Calculate the total price of all items in the shopping cart
+const totalPrice = calculateTotal(shoppingCart);
+console.log(`Total Price: $${totalPrice.toFixed(2)}`);
+
+// another way
+// Define the shoppingCart object
+const shoppingCart1 = {
+  items: [
+    { name: "Apple", price: 1.2, quantity: 3 },
+    { name: "Banana", price: 0.5, quantity: 5 },
+    { name: "Orange", price: 0.8, quantity: 2 },
+  ],
+};
+
+// Function to calculate the total price of all items in the cart
+function calculateTotal(cart) {
+  let total = 0;
+  for (let i = 0; i < cart.items.length; i++) {
+    total += cart.items[i].price * cart.items[i].quantity;
+  }
+  return total;
+}
+
+// Calculate the total price of all items in the shopping cart
+const totalPrice1 = calculateTotal(shoppingCart);
+console.log(`Total Price: $${totalPrice.toFixed(2)}`);
 
 /* Task 3
 Create an array of objects named `restaurants`, each with properties `name`, `cuisineType`, and `rating`.
 Write a function that returns only the restaurants with a rating of 4 or higher.
 */
-
 // Your code here
+// *****************************************************
+// Array of restaurants
+const restaurants = [
+  { name: "Sushi Place", cuisineType: "Japanese", rating: 4.5 },
+  { name: "Pasta Palace", cuisineType: "Italian", rating: 3.8 },
+  { name: "Burger Haven", cuisineType: "American", rating: 4.2 },
+  { name: "Taco Town", cuisineType: "Mexican", rating: 4.7 },
+  { name: "Pizza Parlor", cuisineType: "Italian", rating: 3.5 },
+];
+
+// Function to filter restaurants with a rating of 4 or higher
+function getTopRatedRestaurants(restaurants) {
+  return restaurants.filter((restaurant) => restaurant.rating >= 4);
+}
+
+// Get the top-rated restaurants
+const topRated = getTopRatedRestaurants(restaurants);
+console.log(topRated);
 
 /* Task 4
 Define an object named `bankAccount` with properties `accountHolder`, `balance`, and `transactions` (an array of numbers).
 Write a function that calculates the total balance after all transactions.
 */
-
 // Your code here
+// *******************************************************
+// Define the bankAccount object
+const bankAccount = {
+  accountHolder: "John Doe",
+  balance: 1000, // Initial balance
+  transactions: [200, -50, -100, 150, -30], // Array of transactions (positive for deposits, negative for withdrawals)
+};
+
+// Function to calculate the total balance after all transactions
+function calculateTotalBalance(account) {
+  // Reduce the transactions array to calculate the new balance by adding each transaction to the initial balance
+  return account.transactions.reduce(
+    (total, transaction) => total + transaction,
+    account.balance
+  );
+}
+
+// Calculate the total balance after all transactions
+const totalBalance = calculateTotalBalance(bankAccount);
+console.log(`Total Balance: $${totalBalance}`);
+
+// another way
+// Define the bankAccount object
+const bankAccount1 = {
+    accountHolder: "John Doe",
+    balance: 1000, // Initial balance
+    transactions: [200, -50, -100, 150, -30], // Array of transactions (positive for deposits, negative for withdrawals)
+};
+
+// Function to calculate the total balance after all transactions using a for loop
+function calculateTotalBalance(account) {
+  let totalBalance = account.balance; // Start with the initial balance
+
+  // Loop through the transactions and update the totalBalance
+    for (let i = 0; i < account.transactions.length; i++) {
+    totalBalance += account.transactions[i]; // Add each transaction to the balance
+}
+
+    return totalBalance;
+}
+
+// Calculate the total balance after all transactions
+const totalBalance1 = calculateTotalBalance(bankAccount);
+console.log(`Total Balance: $${totalBalance}`);
 
 /* Task 5
 Create an array `students` where each student has `name`, `scores` (array of numbers), and `averageScore` (initially null).
 Write a function that calculates and updates each student's `averageScore`.
 */
-
 // Your code here
 
 /* Task 6
