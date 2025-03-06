@@ -1,7 +1,7 @@
-// type, only one select
-const pancakeType = document.querySelector("#type"); // console.log(toppings);
-const toppings = document.querySelectorAll(".topping"); // used class name for all
-const extras = document.querySelectorAll(".extra"); // used class name for all
+// select all items and store in a variable
+const pancakeType = document.querySelector("#type"); // console.log(toppings
+const toppings = document.querySelectorAll(".topping"); // used class name
+const extras = document.querySelectorAll(".extra"); // used class name for
 
 const pancakeForm = document.querySelector("#pancakeForm");
 const totalPriceDisplay = document.querySelector("#totalPriceDisplay");
@@ -10,6 +10,7 @@ const totalPriceBanner = document.querySelector("#totalPrice");
 const seeOrderButton = document.querySelector("#seeOrder");
 const summaryText = document.querySelector("#summaryText");
 const delivery = document.querySelector(".delivery");
+
 
 // ********************  version 1 ************************
 // // function first thing to do is to calculate the total
@@ -49,6 +50,7 @@ const delivery = document.querySelector(".delivery");
 // extras.forEach(extra => {
 //     extra.addEventListener('change', calculateTotal);
 // });
+
 
 // *********************** version 2 ************************
 const changeHandler = (event) => {
@@ -103,6 +105,8 @@ seeOrderButton.addEventListener("click", () => {
   const toppings = document.querySelector("#topping");
   const extras = document.querySelector("#extra");
 
+
+
   summaryText.textContent = `Order created by ${customerName.value} for ${pancakeType.value} with ${toppings.value} and ${extras.value} for a total of ${totalPriceDisplay.textContent}.`;
 });
 
@@ -112,3 +116,6 @@ seeOrderButton.addEventListener("click", () => {
 // console.log('Base price: ', basePrice);
 
 // customername,
+
+let topping = [];
+

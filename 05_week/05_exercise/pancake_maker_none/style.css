@@ -1,6 +1,5 @@
 body {
     background-color: #dd9e7a;
-    background-color: #f5f6ea;
     color: #000;
     display: flex;
     justify-content: center;
@@ -41,7 +40,6 @@ body {
     top: 20px;
     right: 20px;
     background-color: #d17b49;
-    background-color: #d54215;
     color: white;
     border-radius: 50%;
     width: 100px;
@@ -50,12 +48,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-  }
-
-  h2 {
-    color: #b53811;
-    font-size: 2rem;
-    border-bottom: 3px solid #e7ab46;
   }
   
   h3 {
@@ -71,21 +63,3 @@ body {
     display: block;
     margin-top: 10px;
   }
-
-  #seeOrder {
-    background-color: #d54215;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-  }
-
-h5{
-  --color-brand-primary: #d54215;
-  --color-brand-primary-hover: #b53811;
-  --color-brand-secondary: #e7ab46;
-  --color-brand-tertiary: #f5f6ea;
-  --color-list-header-background: #f5f6ea;
-  --color-loader-background: #d54215;
-}
-
