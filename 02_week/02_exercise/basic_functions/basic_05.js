@@ -13,4 +13,6 @@ Hint: Use Math.random(), Math.floor(), and simple math.
 function generateRandomNumber (min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-console.log(generateRandomNumber(1, 10)); // Random number between 1 and 10
+
+// Random number between 1 and 10
+console.log(generateRandomNumber(1, 10)); 
