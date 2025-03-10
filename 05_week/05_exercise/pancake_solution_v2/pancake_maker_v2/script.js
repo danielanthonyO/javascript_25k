@@ -54,20 +54,17 @@ const delivery = document.querySelector(".delivery");
 
 // *********************** version 2 ************************
 const changeHandler = (event) => {
-  //  to test on browser = console.log(event.target.name);  //  console.log(event.target.value);
   console.log("Event: ", event);
   const basePrice = parseFloat(
     document.getElementById("type").selectedOptions[0].dataset.price
   );
-  // console.log('Base price: ', basePrice);
 
-  // acc = sum, learn spread operator
+  // Do toppings logic here and deliveryfee logic here
   const toppingsTotal = [
     ...document.querySelectorAll(".topping:checked"),
   ].reduce((acc, topping) => {
     return acc + parseFloat(topping.dataset.price);
   }, 0);
-  // console.log('Toppings total: ', toppingsTotal);
 
   // Do extras logic here and deliveryfee logic here
   const extrasTotal = [...document.querySelectorAll(".extra:checked")].reduce(
@@ -76,7 +73,6 @@ const changeHandler = (event) => {
     },
     0
   );
-  // console.log('Extras total: ', extrasTotal);
 
   let deliveryfee = 0;
   const deliveryChecked = document.querySelector(".delivery:checked");
@@ -119,3 +115,19 @@ seeOrderButton.addEventListener("click", () => {
 
 let topping = [];
 
+document.getElementById("seeOrder").addEventListener("click", () => {
+  const name = document.getElementById("customerName").value || "Anonymous";
+  const pancakeType = form.querySelector("#type").selectedOptions[0].textContent;
+  const deliveryMethod = form.querySelector('input[name="delivery"]:checked').parentNode.textContent.trim();
+
+  summaryText.innerHTML = `
+      <p><strong>Name:</strong> ${name}</p>
+      <p><strong>Pancake:</strong> ${pancakeType}</p>
+      <p><strong>Toppings:</strong> ${toppings.length > 0 ? toppings.join(", ") : "None"}</p>
+      <p><strong>Extras:</strong> ${extras.length > 0 ? extras.join(", ") : "None"}</p>
+      <p><strong>Delivery:</strong> ${deliveryMethod}</p>
+      <p><strong>Total Price:</strong> ${totalPriceDisplay.textContent}</p>
+  `;
+
+  orderSummary.style.display = "block";
+});
