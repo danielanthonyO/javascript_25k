@@ -12,6 +12,7 @@
 6. Try the same operations with one positive and one negative number.
 */
 
+//1. Create two variables, a and b, and assign them integer values (e.g., 8 and 3).
 let a = 8;
 let b = 3;
 
@@ -33,6 +34,7 @@ console.log("Quotient of a and b is:", quotient);
 
 let remainder = a % b;
 console.log("Remainder of a and b is:", remainder);
+
 
 a = 20;
 b = -10;
