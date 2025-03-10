@@ -2,6 +2,7 @@
 Create an object `weather` that contains properties `temperature`, `humidity`, and `condition` (e.g., "Sunny", "Rainy").
 Write a function that logs `"Take an umbrella!"` if it's rainy.
 // Your code here *******************************************************/
+
 const weather = {
   temperature: 22, 
   humidity: 60, 
@@ -23,6 +24,7 @@ Define an object named `shoppingCart` that contains an array of items.
 Each item has `name`, `price`, and `quantity`.
 Write a function that calculates the total price of all items in the cart.
 // Your code here *****************************************************/
+
 const shoppingCart = {
   items: [
     { name: "Apple", price: 1.2, quantity: 3 },
@@ -69,6 +71,7 @@ console.log('==========================================');
 Create an array of objects named `restaurants`, each with properties `name`, `cuisineType`, and `rating`.
 Write a function that returns only the restaurants with a rating of 4 or higher.
 // Your code here ******************************************************/
+
 const restaurants = [
   { name: "Sushi Place", cuisineType: "Japanese", rating: 4.5 },
   { name: "Pasta Palace", cuisineType: "Italian", rating: 3.8 },
@@ -91,6 +94,7 @@ console.log('==========================================');
 Define an object named `bankAccount` with properties `accountHolder`, `balance`, and `transactions` (an array of numbers).
 Write a function that calculates the total balance after all transactions.
 // Your code here ********************************************************/
+
 const bankAccount = {
   accountHolder: "John Doe",
   balance: 1000, // Initial balance
@@ -136,6 +140,7 @@ console.log('==========================================');
 Create an array `students` where each student has `name`, `scores` (array of numbers), and `averageScore` (initially null).
 Write a function that calculates and updates each student's `averageScore`.
 // *********************************************************/
+
 let students = [
   { name: "Alice", scores: [80, 80, 80], averageScore: null },
   { name: "Bob", scores: [70, 70, 70], averageScore: null },
@@ -161,6 +166,7 @@ console.log('=========================================');
 Define an array named `courses`, each containing `courseName`, `instructor`, and `studentsEnrolled`.
 Write a function that logs the course name of any course with more than 30 students.
 // ****************************************************************/
+
 let courses = [
   { courseName: "Mathematics", instructor: "Dr. Smith", studentsEnrolled: 25 },
   { courseName: "Physics", instructor: "Dr. Johnson", studentsEnrolled: 35 },
@@ -186,6 +192,7 @@ console.log('==========================================');
 Create an object `pet` with properties `species`, `name`, and `isVaccinated`.
 Write a function that returns `"Vaccination required"` if the pet is not vaccinated.
 // **************************************************************/
+
 const pet = {
   species: "Dog",
   name: "Brown",
@@ -205,6 +212,7 @@ console.log('==========================================');
 Define an object named `city` with properties `name`, `population`, and `landmark`.
 Write a function that logs `"This is a big city!"` if the population exceeds 1,000,000.
 / Your code here ********************************************/
+
 const city = {
   name: "Lagos",
   population: 1500000,
@@ -225,6 +233,7 @@ console.log('==========================================');
 Create an array `transactions`, where each transaction is an object with `type` ("credit" or "debit") and `amount`.
 Write a function that calculates the total balance after processing all transactions.
 // Your code here ****************************************************/
+
 const transaction = [
   {type: 'credit', amount: 2000},
   {type: 'dedit', amount: 1000},
