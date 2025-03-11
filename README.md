@@ -21,12 +21,29 @@
     - [x] loops
     
 - **week_04:**
-    - [x] basic DOM
     - [x] ATM simulator
-    - [x] pancake maker
+    - [x] basic DOM
+    - [x] pancake maker version1
     - [x] forms
+
 - **week_05:**
     - [x] array1
+    - [x] pancake maker version2
+
+- **week_06:**
+    - [x] objects
+    - [x] little zoo version 1
+    - [x] little zoo version 2
+    
+- **week_07:**
+    - [x] pancake maker version3
+    - [x] JSON
+    - [x] localStorage
+
+- **week_05:**
+    - [x] JS writing practice
+    - [x] error handling
+    - [x] 
 
 
 
