@@ -26,7 +26,7 @@ function withdraw() {
     let message = document.getElementById('message');
 
     if (isNaN(amount) || amount <= 0) {
-        showMessage("Enter a valid withdrawal amount!", "error");
+        showMessage("Enter a valid amount!", "error");
         return;
     }
 
