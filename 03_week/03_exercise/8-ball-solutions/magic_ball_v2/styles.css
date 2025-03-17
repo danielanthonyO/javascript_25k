@@ -13,8 +13,6 @@ body{
 
 .container{
     border: 2px solid red;
-
-
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -24,7 +22,7 @@ body{
     background-color: #333;
     padding: 2em;
     border-radius: 10px;
-    height: 60%;
+    height: 70%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -69,6 +67,9 @@ body{
 
     #question-input {
         padding: 9px;
+        width: 80%;
+        border-radius: 5px;
+        margin-bottom: 20px;
     }
 
     
@@ -78,7 +79,7 @@ body{
         color: #000;
         background-color: #f2f991;
         padding: 10px;
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
 }
