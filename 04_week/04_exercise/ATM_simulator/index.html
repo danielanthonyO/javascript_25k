@@ -3,40 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATM Simulator</title>
     <link rel="stylesheet" href="styles.css">
+    <title>ATM Simulator</title>
 </head>
-
 <body>
-<section >
 
-<div class="atm-container">
-    <h2>ATM Simulator</h2>
-    <h3>Balance: $<span id="balance">100</span></h3>
-    
-    <!-- <input type="number" id="amount" placeholder="Enter amount">
-    <button onclick="deposit()">Deposit</button> -->
-    <br>
-    <input type="number" id="amount" placeholder="deposit">
-    <!-- <button id="depositBtn">Deposit</button> -->
-    <button onclick="deposit()">Deposit</button>
-    <br>
-    
-    <input type="number" id="withdraw" placeholder="withdraw">
-    <!-- <button id="withdrawBtn">Withdraw</button> -->
-    <button onclick="withdraw()">Withdraw</button> 
-    
-    <p id="message" class="error"></p>
+    <div class="atm-container">
+        <h2>ATM Simulator</h2>
 
-    <!-- <button onclick="deposit()">Deposit</button>
-    <button onclick="withdraw()">Withdraw</button> -->
-    
-    <p id="message"></p>
-</div>
+        <!-- Balance Display Section -->
+        <div class="balance-section">
+            Balance: <span id="balance">0</span>€
+        </div>
 
-</section>
+        <!-- Deposit Section -->
+        <div class="input-group">
+            <input type="number" id="deposit-amount" placeholder="Enter deposit amount">
+            <button class="deposit-btn" onclick="deposit()">Deposit</button>
+        </div>
 
-    
-<script src="script.js"></script>
+        <!-- Withdraw Section -->
+        <div class="input-group">
+            <input type="number" id="withdraw-amount" placeholder="Enter withdrawal amount">
+            <button class="withdraw-btn" onclick="withdraw()">Withdraw</button>
+        </div>
+
+        <!-- Message Area -->
+        <p class="message" id="message"></p>
+    </div>
+
+    <script>
+      
+    </script>
+    <script src="script.js"></script>
 </body>
 </html>
