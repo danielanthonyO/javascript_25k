@@ -117,7 +117,7 @@ let topping = [];
 
 document.getElementById("seeOrder").addEventListener("click", () => {
   const name = document.getElementById("customerName").value || "Anonymous";
-  const pancakeType = form.querySelector("#type").selectedOptions[0].textContent;
+  pancakeType = form.querySelector("#type").selectedOptions[0].textContent;
   const deliveryMethod = form.querySelector('input[name="delivery"]:checked').parentNode.textContent.trim();
 
   summaryText.innerHTML = `
