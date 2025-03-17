@@ -1,62 +1,55 @@
-/* Task 1
+/* Task 1 ******************************************************
 Create a JavaScript array named `library` that represents a collection of books.
 Each book should have properties for `title`, `author`, and `yearPublished`.
 Add at least two book objects to this collection.
 */
-// Your code here
-// ******************************'
+// Your code here **********************************************'
+
 const library = [
     { title: "Mockingbird", author: "Harper Lee", yearPublished: 1960 },
     { title: "Moby Dick", author: "Herman Melville", yearPublished: 1851 },
 ];
 
-// library.push({title: "Animal farm", author: "George Orwell", yearPublished: 1949});
-// library.push({title: "Pride and Prejudice", author: "Jane Austen", yearPublished: 1813});
+library.push({title: "Animal farm", author: "George Orwell", yearPublished: 1949});
+library.push({title: "Pride and Prejudice", author: "Jane Austen", yearPublished: 1813});
 
-// console.log(library);
-console.log('==================================')
+console.log(library);
 
 
-/* Task 2
-Access the `title` of the first book in the `library` collection and log it to the console.
-Modify the `yearPublished` for the second book in the collection to a new year, then log the updated book object to the console.
-*/
-
-// Your code here
-// **************************************
+/* Task 2 *************************************************************
+Access the `title` of the first book in the `library` collection and log it to the console. Modify the `yearPublished` for the second book in the collection to a new year, then log the updated book object to the console. */
+// Your code here *******************************************************
 // console.log(library[0].title);
 
 const accessNew = library[1].yearPublished;
-// console.log(accessNew);
+console.log(accessNew);
 console.log('==================================')
 
 
-/* Task 3
-Use dot notation to add a new property `genres` (an array of strings) to the first book in the `library`.
-Use bracket notation to add a boolean property `isAvailable` to the same book, indicating its availability.
-*/
 
-// Your code here
-// ***************************************
-// library.genre = 'Drama';
-// console.log(library);
+/* Task 3 *****************************************************************
+Use dot notation to add a new property `genres` (an array of strings) to the first book in the `library`. Use bracket notation to add a boolean property `isAvailable` to the same book, indicating its availability. */
+// Your code here **********************************************************
 
-// library['isAvailable'] = true;
-// console.log(library);
+library.genre = 'Drama';
+console.log(library);
+
+library['isAvailable'] = true;
+console.log(library);
 console.log('==================================')
 
 
-/* Task 4
+
+/* Task 4 ***********************************************************
 Define a constructor function named `Book` that can create new book objects with properties for `title`, `author`, `yearPublished`, and `genres`.
-Using the `Book` constructor, create a new book object with the provided input values and add it to the `library` collection.
-*/
-// Your code here
-// *****************************
+Using the `Book` constructor, create a new book object with the provided input values and add it to the `library` collection. */
+// Your code here *****************************************************
+
 function Book(title, author, yearPublished, genres) {
-  this.title = title;
-  this.author = author;
-  this.yearPublished = yearPublished;
-  this.genres = genres;
+    this.title = title;
+    this.author = author;
+    this.yearPublished = yearPublished;
+    this.genres = genres;
 }
 const house = [];
 const newBook = new Book("Mockingbird", "Harper Lee", 1960, "Drama");
@@ -65,13 +58,10 @@ console.log("             ");
 console.log('==================================')
 
 
-/* Task 5
-Write a function named `createBook` that takes parameters for `title`, `author`, `yearPublished`, and `genres` (an array).
-The function should return a new book object with these properties.
-Test `createBook` by creating a new book object with user-provided input and logging the new book object to the console.
-*/
-// Your code here
-// ************************************
+/* Task 5 **************************************************************
+Write a function named `createBook` that takes parameters for `title`, `author`, `yearPublished`, and `genres` (an array). The function should return a new book object with these properties. Test `createBook` by creating a new book object with user-provided input and logging the new book object to the console.*/
+// Your code here *******************************************************
+
 function createBook(title, author, yearPublished, [genres]) {
     return [
     {
@@ -94,12 +84,12 @@ console.log("Full Library: ", library);
 console.log('==================================')
 
 
-/* Task 6
+
+/* Task 6 ************************************************************
 Convert the `library` collection to a JSON string and log it to the console.
-Parse the JSON string back into a JavaScript object and log the first book's title to the console.
-*/
-// Your code here
-// ************************************
+Parse the JSON string back into a JavaScript object and log the first book's title to the console.*/
+// Your code here ******************************************************
+
 const newLibrary = [
     { title: "To Kill a Mockingbird", author: "Harper Lee", yearPublished: 1960 },
     { title: "1984", author: "George Orwell", yearPublished: 1949 },
@@ -119,12 +109,12 @@ console.log("First Book Title:", parsedLibrary[0].title);
 console.log('==================================')
 
 
-/* Task 7
+
+/* Task 7 ****************************************************************
 Create an array named `students`, where each student has a `name`, `age`, and `grade`.
-Log the name of any student who has a grade higher than 90.
-*/
-// Your code here
-// ***********************************************
+Log the name of any student who has a grade higher than 90. */
+// Your code here *********************************************************
+
 const students = [
     { name: "Alice", age: 17, grade: 95 },
     { name: "Bob", age: 18, grade: 88 },
@@ -141,12 +131,12 @@ students.forEach(student => {
 });
 console.log('==================================')
 
-/* Task 8
-Define an object named `car` with properties for `brand`, `model`, `year`, and `isElectric`.
-Use a function to check if the car is electric. If it is, log `"This car is eco-friendly!"`. Otherwise, log `"This car runs on fuel."`
-*/
-// Your code here 
-// ******************************************************
+
+
+/* Task 8 ****************************************************
+Define an object named `car` with properties for `brand`, `model`, `year`, and `isElectric`. Use a function to check if the car is electric. If it is, log `"This car is eco-friendly!"`. Otherwise, log `"This car runs on fuel."` */
+// Your code here ********************************************
+
 const car = [
     {brand: 'Tesla', model: 'Model S', year: '2003', isElectric: 'true'},
     {brand: 'Volvo', model: 'Model', year: '2010', isElectric: 'false'}
@@ -166,12 +156,12 @@ checkCarType(car);
 console.log('==================================')
 
 
-/* Task 9
+
+/* Task 9 *******************************************************
 Create a `movies` array where each movie is an object with properties for `title`, `director`, and `rating`.
-Write a loop that logs all movie titles with a rating higher than 8.
-*/
-// Your code here
-// ************************************************
+Write a loop that logs all movie titles with a rating higher than 8. */
+// Your code here ************************************************
+
 const movies = [
     { title: "Inception", director: "Christopher Nolan", rating: 8.8 },
     { title: "Interstellar", director: "Christopher Nolan", rating: 7.6 },
@@ -189,11 +179,11 @@ movies.forEach(movie => {
 console.log('==================================')
 
 
-/* Task 10
-Write a function `findOldestCar` that takes an array of car objects and returns the car with the earliest `year`.
-*/
-// Your code here
-// *********************************************
+
+/* Task 10 *******************************************************
+Write a function `findOldestCar` that takes an array of car objects and returns the car with the earliest `year`.*/
+// Your code here ************************************************
+
 // Function to find the oldest car
 function findOldestCar(cars) {
     if (cars.length === 0) return null; // Handle empty array case
@@ -217,13 +207,12 @@ console.log("Oldest Car:", oldestCar);
 console.log('==================================')
 
 
-/* Task 11
+/* Task 11 *****************************************************
 Define a `userProfiles` array containing objects representing users.
 Each user should have a `username`, `email`, and `isAdmin` property.
-Write a function that filters and returns only the users who are administrators.
-*/
-// Your code here
-// *************************************************
+Write a function that filters and returns only the users who are administrators.*/
+// Your code here ************************************************
+
 // Array of user objects
 const userProfiles = [
     { username: "johnDoe", email: "john@example.com", isAdmin: false },
@@ -245,12 +234,11 @@ console.log("Admin Users:", adminUsers);
 console.log('==================================')
 
 
-/* Task 12
+/* Task 12 *********************************************************
 Define an array named `orders`, where each order contains `orderId`, `customerName`, `totalAmount`, and `status` (either "pending" or "completed").
-Write a function that returns only the completed orders.
-*/
-// Your code here
-// ********************************************
+Write a function that returns only the completed orders. */
+// Your code here **************************************************
+
 // Define the orders array
 const orders = [
     { orderId: 1, customerName: "Alice", totalAmount: 250.5, status: "completed" },
@@ -271,12 +259,10 @@ console.log("Completed Orders:", completedOrders);
 console.log('==================================')
 
 
-/* Task 13
-Create an object named `smartphone` with properties for `brand`, `model`, `batteryLife`, and `is5GEnabled`.
-Write a function that logs `"This phone supports 5G!"` if `is5GEnabled` is `true`, otherwise logs `"This phone does not support 5G."`
-*/
-// Your code here
-// *********************************************************
+/* Task 13 *************************************************************
+Create an object named `smartphone` with properties for `brand`, `model`, `batteryLife`, and `is5GEnabled`. Write a function that logs `"This phone supports 5G!"` if `is5GEnabled` is `true`, otherwise logs `"This phone does not support 5G."`*/
+// Your code here ******************************************************
+
 // Define the smartphone object
 const smartphone = {
     brand: "Samsung",
@@ -298,12 +284,12 @@ function check5GSupport(phone) {
 check5GSupport(smartphone);
 console.log('==================================')
 
-/* Task 14
+
+/* Task 14 *************************************************************
 Define an object named `fox` with properties `name`, `age`, and `habitat`.
-Write a function that logs `"This fox is young"` if its age is under 3, `"This fox is an adult"` if 3 or older.
-*/
-// Your code here
-// **************************************************
+Write a function that logs `"This fox is young"` if its age is under 3, `"This fox is an adult"` if 3 or older. */
+// Your code here ******************************************************
+
 // Define the fox object
 const fox = {
     name: "Rusty",
@@ -325,8 +311,9 @@ checkFoxAge(fox);
 console.log('==================================')
 
 
-// another way
+// another way *******************************************************
 // Define an array of fox objects
+
 const foxes = [
     { name: "Rusty", age: 2, habitat: "Forest" },
     { name: "Blaze", age: 4, habitat: "Mountains" },
@@ -340,8 +327,9 @@ console.log("Young Foxes:", youngFoxes);
 console.log('==================================')
 
 
-// another way
+// another way *****************************************************
 // Function to categorize foxes as young or adult
+
 const categorizedFoxes = foxes.reduce(
     (acc, fox) => {
         if (fox.age < 3) {
@@ -359,32 +347,32 @@ console.log("Adult Foxes:", categorizedFoxes.adult);
 console.log('==================================')
 
 
-/* Task 15
-Define an array named `employees`, where each employee has `name`, `position`, and `salary`.
-Write a function that calculates the total salary of all employees in the company.
-*/
-// Your code here
-// ************************************************
+
+/* Task 15 ******************************************************
+Define an array named `employees`, where each employee has `name`, `position`, and `salary`. Write a function that calculates the total salary of all employees in the company. */
+// Your code here **********************************************
+
 // Define an array of employees
-// const employees = [
-//     { name: "John", position: "Manager", salary: 60000 },
-//     { name: "Sarah", position: "Developer", salary: 50000 },
-//     { name: "Mike", position: "Designer", salary: 45000 },
-//     { name: "Anna", position: "Developer", salary: 55000 },
-// ];
+const employees1 = [
+    { name: "John", position: "Manager", salary: 60000 },
+    { name: "Sarah", position: "Developer", salary: 50000 },
+    { name: "Mike", position: "Designer", salary: 45000 },
+    { name: "Anna", position: "Developer", salary: 55000 },
+];
 
-// // Function to calculate the total salary of all employees
-// function calculateTotalSalary(employees) {
-//     return employees.reduce((total, employee) => total + employee.salary, 0);
-// }
+// Function to calculate the total salary of all employees
+function calculateTotalSalary(employees) {
+    return employees.reduce((total, employee) => total + employee.salary, 0);
+}
 
-// // Calculate and log the total salary
-// const totalSalary = calculateTotalSalary(employees);
-// console.log("Total Salary of All Employees:", totalSalary);
+// Calculate and log the total salary
+const totalSalary1 = calculateTotalSalary(employees);
+console.log("Total Salary of All Employees:", totalSalary);
 
 
-// another way
+// another way ******************************************************
 // Define an array of employees
+
 const employees = [
     { name: "John", position: "Manager", salary: 60000 },
     { name: "Sarah", position: "Developer", salary: 50000 },

@@ -22,8 +22,8 @@ console.log(result1)
 result2 = isEven(7)
 console.log(result2)
 
-// Solution 2
 
+// Solution 2
 let isOdd = (num) => {
     if (num % 2 !== 0) {
         return "Odd"
@@ -37,3 +37,11 @@ result1 = isOdd(4)
 console.log(result1)
 result2 = isOdd(7)
 console.log(result2)
+
+
+// Solution 3
+// Bonus: Modify the function to use implicit return. 
+const isEven = num => num % 2 === 0;
+
+console.log(isEven(4)); // true
+console.log(isEven(7)); // false

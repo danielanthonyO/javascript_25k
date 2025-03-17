@@ -14,6 +14,8 @@ function getLength (str) {
 result = getLength("JavaScript")
 console.log(result)
 
+
+
 // solution 2
 let getLength2 = (str) => {
     return str.length

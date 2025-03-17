@@ -24,7 +24,6 @@ function getAnimalDescription(favoriteAnimal){
 }
 
 // Call the function with different animal names
-
 console.log(getAnimalDescription('dog'));   // "Dogs are loyal friends."
 console.log(getAnimalDescription('cat')); 
 console.log(getAnimalDescription('82'));

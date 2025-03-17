@@ -5,38 +5,45 @@ Display all numbers in a single line in the console.;
 */
 
 // // Solution 1
-// function logEvenNumbers() {
-//     for (let i = 2; i < 100; i += 2) {
-//         console.log(i, 100 -i);
-//     }
-// }
+function logEvenNumbers() {
+    for (let i = 2; i < 100; i += 2) {
+        console.log(i, 100 -i);
+    }
+}
 
-// logEvenNumbers();
+logEvenNumbers();
+console.log('=============================================');
+
+
 
 // // Solution 2: Another way to solve the problem
-// const logEvenNumbers2 = () => {
-//      let maxNum = 100;    
-//     for (let i = 2; i < maxNum; i += 2) {
-//         if (i % 2 === 0) 
-//         console.log(i, 100 - i);
-//     }
-// }
+const logEvenNumbers2 = () => {
+    let maxNum = 100;    
+    for (let i = 2; i < maxNum; i += 2) {
+        if (i % 2 === 0) 
+        console.log(i, 100 - i);
+    }
+}
 
-// logEvenNumbers2();
+logEvenNumbers2();
+console.log('=============================================');
+
 
 // // Solution 3: Another way to solve the problem
-// const logEvenNumbers3 = () => {
-//     let i = 2;
-//     while (i < 100) {
-//         if (i % 2 === 0) {
-//             console.log(i, 100 - i);
-//         }
+const logEvenNumbers3 = () => {
+    let i = 2;
+    while (i < 100) {
+        if (i % 2 === 0) {
+            console.log(i, 100 - i);
+        }
 
-//         i ++;
-//     }
-// }
+        i ++;
+    }
+}
 
-// logEvenNumbers3();
+logEvenNumbers3();
+console.log('=============================================');
+
 
 /* create a function that runs a loop and console logs all numbers from 1 to 5 */
 const logNumbers = () => {
@@ -46,8 +53,8 @@ const logNumbers = () => {
 }
 
 logNumbers();
+console.log('=============================================');
 
-console.log('===========');
 
 /* create a function that runs a while loop and console logs all numbers from 1 to 5 */
 const logNumbers2 = () => {
@@ -58,3 +65,4 @@ const logNumbers2 = () => {
     }
 }
 logNumbers2();
+console.log('=============================================');

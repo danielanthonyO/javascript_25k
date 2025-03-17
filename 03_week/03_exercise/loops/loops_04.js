@@ -28,6 +28,7 @@ const countEvenNumbers = () => {
 };
 
 countEvenNumbers();
+console.log('=============================================');
 
 
 // Solution 2 using for loop.
@@ -44,3 +45,4 @@ const countEvenNumbers1 = () => {
 };
 
 countEvenNumbers1();
+console.log('=============================================');
