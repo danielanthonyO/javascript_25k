@@ -6,65 +6,86 @@
 
   <title>Magic 8-Ball</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #d9caca;
-     
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #a9ab4b;
+      display: flex;
+      justify-content: center;
+      margin-top: 8%;
     }
 
     .container {
       max-width: 500px;
+      height: 68vh;
       margin: 40px auto;
       padding: 20px;
-      border: 2px solid #333;
-      background-color: rgb(244, 244, 122);
+      color: #333;
+      border: 2px solid #ff0000;
+      background-color: #1c1b1b;
       border-radius: 10px;
     }
 
     h1 {
-      color: #333;
-      margin-top: 50px;
+      margin: 50px;
+      font-weight: 700;
+      border-bottom: 2px solid #ff0000;
     }
 
     p {
-      color: #333;
-      margin-top: 10px;
+      margin: 20px;
       font-size: 18px;
+      font-weight: 500;
+    }
+
+    div p {
+      margin-bottom: 20px;
+      font-weight: 400;
     }
 
     button {
-      padding: 10px 20px;
-      font-size: 18px;
-      background-color: #007bff;
-      color: white;
+      background-color: #fff;
+      color: #000;
+      font-weight: 600;
       border: none;
-      border-radius: 5px;
       cursor: pointer;
-      margin-top: 20px;
+      font-size: 17px;
+      margin: 25px;
     }
     .circle {
       width: 200px;
       height: 200px;
-      background-color: #007bff;
       border-radius: 50%;
+      background-color: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0 auto;
     }
 
-    button:hover {
-      background-color: transparent;
-    }
+  .circle:hover {
+    border: 2px solid #ff0000;
+  }
+
   </style>
 </head>
+
 <body>
   <div class="container">
   <h1>Magic 8-Ball</h1>
-  <p>Ask Magic 8-Ball a yes or no question and click the button to reveal the answer!</p>
+
+    <p>Click the button to ask</p>
+    <div>
+      <p>Magic 8-Ball a yes or no question</p>
+    </div>
+
+  
 
   <div class="circle">
   <button onclick="magic8Ball()">Click Here</button>

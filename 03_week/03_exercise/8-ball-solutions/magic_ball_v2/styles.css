@@ -7,22 +7,23 @@
 body{
     position: relative;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #f2f991;
 
 }
 
 .container{
-    order: 1px solid red;
-    text-align: center;
+    border: 2px solid red;
+
+
     display: flex;
     flex-direction: column;
+    text-align: center;
     gap: 20px;
-    background-color: #f2f991;
-    /* background-color: rgb(0, 201, 255); */
+    color: #fff;
+
+    background-color: #333;
     padding: 2em;
-    border: 2px solid #333;
     border-radius: 10px;
-    width: 30%;
     height: 60%;
     position: absolute;
     top: 50%;
@@ -30,34 +31,53 @@ body{
     transform: translate(-50%, -50%);
 
     h1{
-        color: #f00;
+        color: #fff;
         border-bottom: 3px solid #e20505;
-        padding-bottom: 10px;
         font-weight: 700;
     }
+
     P{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        font-weight: 400;
     }
+
     button{
         padding:8px 15px;
         cursor: pointer;
-        background-color: #333;
-        color: #fff;
+        background-color: #000;
+        background-color: #f2f991;
+        color: #000;
         font-size: 1.2rem;
         border-radius: 5px;
         border: none;
+        transition: 0.5s;
+    }
+
+    button:hover {
+        color: antiquewhite;
+        background-color: #636739;
+    }
+
+    .btn{
+        padding-top: 10px;
     }
 
     .hidden{
         visibility: 0;
         opacity: 0;
-
     }
 
+    #question-input {
+        padding: 9px;
+    }
+
+    
     .response{
         margin-top: 30px;
-        font-size: 1.5rem;
-        background-color: rgb(248, 248, 245);
+        font-size: 1.2rem;
+        color: #000;
+        background-color: #f2f991;
+        padding: 10px;
         border-radius: 20px;
     }
 
