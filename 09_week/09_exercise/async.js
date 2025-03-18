@@ -7,15 +7,15 @@ Write a function `delayedGreet(name, callback)`
 After **2 seconds**, it should call `callback` with `"Hello, [name]!"`  
 ***********************************************************/
 
-function delayedGreet(name, callback) {
-    // Your code here
-    setTimeout(() => {
-        callback(`Hello, ${name}!`);
-    }, 2000); // 2 seconds delay
-}
+// function delayedGreet(name, callback) {
+//     // Your code here
+//     setTimeout(() => {
+//         callback(`Hello, ${name}!`);
+//     }, 2000);
+// }
 
-delayedGreet("Alice", (message) => console.log(message));
-// Expected: "Hello, Alice!" (after 2 seconds)
+// delayedGreet("Alice", (message) => console.log(message));
+// // Expected: "Hello, Alice!" (after 2 seconds)
 
 
 /* 
@@ -26,13 +26,16 @@ It should **wait 3 seconds** before calling the callback with:
 `"Order [orderNumber] is ready for pickup."`  
 **************************************************************/
 
-function processOrder(orderNumber, callback) {
-    // Your code here
-}
+// function processOrder(orderNumber, callback) {
+//     // Your code here
+//     setTimeout(() => {
+//         callback(`Order ${orderNumber} is ready for pickup.`);
+//     }, 3000);
+// }
 
-// Test Case
-processOrder(101, (message) => console.log(message));
-// Expected: "Order 101 is ready for pickup." (after 3 seconds)
+// // Test Case
+// processOrder(101, (message) => console.log(message));
+// // Expected: "Order 101 is ready for pickup." (after 3 seconds)
 
 
 /* 
@@ -45,11 +48,11 @@ If `validUser === false`, call the callback immediately with `"Invalid login"`
 
 function loginUser(username, validUser, callback) {
     // Your code here
-    if (validUser.true){
+    if (validUser){
         setTimeout(() => {
-            callback(`Hello, ${username}!`);
+            callback(`Welcome, ${username}!`);
         }, 1000); // 1 seconds delay
-    }
+    }callback('Invalid login')
 }
 
 // Test Cases
