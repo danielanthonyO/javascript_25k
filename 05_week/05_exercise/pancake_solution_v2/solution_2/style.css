@@ -31,7 +31,7 @@ body {
   
   .form-container {
     flex: 1;
-    padding: 50px;
+    padding: 10px 50px;
     min-height: 100vh;
     overflow-y: auto;
   }
@@ -59,7 +59,7 @@ body {
   }
   
   h3 {
-    margin-top: 15px;
+    margin-top: 10px;
   }
   
   input[type="checkbox"] {
@@ -80,12 +80,12 @@ body {
     border-radius: 5px;
   }
 
-h5{
+/* h5{
   --color-brand-primary: #d54215;
   --color-brand-primary-hover: #b53811;
   --color-brand-secondary: #e7ab46;
   --color-brand-tertiary: #f5f6ea;
   --color-list-header-background: #f5f6ea;
   --color-loader-background: #d54215;
-}
+} */
 
