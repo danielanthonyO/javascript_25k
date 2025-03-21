@@ -55,6 +55,7 @@ btnSendQuestion.addEventListener("click", function (e) {
 
     const resMessage = sendMessage();
     const markup = `<p class="response">${resMessage}</p>`; // Corrected template literal
+    alert(`Magic 8-Ball says: ${resMessage}`);
 
     formEl.insertAdjacentHTML("beforeend", markup);
 });
