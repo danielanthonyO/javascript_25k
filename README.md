@@ -40,12 +40,17 @@
     - [x] JSON
     - [x] localStorage
 
-- **week_05:**
+- **week_08:**
     - [x] JS writing practice
     - [x] error handling
-    - [x] 
+    - [x] DOM_manipulation
+    - [x] Fault_findings
 
-
+- **week_09:**
+    - [x] async.js
+    - [x] chaining.js
+    - [x] destructuring.js
+    - [x] spread-rest.js
 
 
 
