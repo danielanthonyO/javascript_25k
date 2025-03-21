@@ -2,6 +2,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
+    background-color: #b0b0a8;
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -39,7 +40,7 @@ body {
   }
   
   button {
-    background-color: #007bff;
+    background-color: #d54215;
     color: white;
     cursor: pointer;
   }
