@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>All Orders</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f6ea;
+        padding: 20px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #d54215;
+      }
+
+      #goBackButton {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #d54215;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .order-item {
+        width: 50%;
+        margin: auto;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s ease;
+      }
+
+      .waiting {
+        background-color: yellow;
+      }
+      .ready {
+        background-color: blue;
+        color: white;
+      }
+      .delivered {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="goBackButton" onclick="goBack()">Go Back</button>
+    <h2>All Orders</h2>
+    <div id="ordersList"></div>
+
+    <script>
+      let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+      function displayAllOrders() {
+        const ordersListDiv = document.getElementById("ordersList");
+        ordersListDiv.innerHTML = "";
+
+        orders.forEach((order) => {
+          const orderDiv = document.createElement("div");
+          orderDiv.classList.add("order-item", order.status);
+          orderDiv.innerHTML = `
+            <p><strong>ID:</strong> ${order.id}</p>
+            <p><strong>Customer:</strong> ${order.customerName}</p>
+            <p><strong>Pancake:</strong> ${order.selectedPancake}</p>
+            <p><strong>Toppings:</strong> ${order.toppings.join(", ") || "None"}</p>
+            <p><strong>Extras:</strong> ${order.extras.join(", ") || "None"}</p>
+            <p><strong>Delivery:</strong> ${order.deliveryMethod}</p>
+            <p><strong>Total Price:</strong> ${order.totalPrice}€</p>
+            <label>Status:
+              <select class="status-dropdown" data-order-id="${order.id}">
+                <option value="waiting" ${order.status === "waiting" ? "selected" : ""}>Waiting</option>
+                <option value="ready" ${order.status === "ready" ? "selected" : ""}>Ready</option>
+                <option value="delivered" ${order.status === "delivered" ? "selected" : ""}>Delivered</option>
+              </select>
+            </label>
+          `;
+          ordersListDiv.appendChild(orderDiv);
+        });
+
+        document.querySelectorAll(".status-dropdown").forEach((dropdown) => {
+          dropdown.addEventListener("change", (event) => {
+            updateOrderStatus(event.target.dataset.orderId, event.target.value);
+          });
+        });
+      }
+
+      function updateOrderStatus(orderId, newStatus) {
+        let order = orders.find((o) => o.id == orderId);
+        if (order) {
+          order.status = newStatus;
+          localStorage.setItem("orders", JSON.stringify(orders));
+          displayAllOrders();
+        }
+      }
+
+      function goBack() {
+        window.location.href = "index.html"; // Adjust if main page URL differs
+      }
+
+      displayAllOrders();
+    </script>
+  </body>
+</html>
