@@ -1,7 +1,7 @@
 /* General Page Styling */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  background-color: #b0b0a8;
   text-align: center;
   margin: 0;
   padding: 20px;
@@ -39,13 +39,14 @@ button {
 }
 
 button {
-  background-color: #007bff;
+  background-color: #d54215;
   color: white;
   cursor: pointer;
+  transition: all;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #e75326;
 }
 
 /* Animal List */

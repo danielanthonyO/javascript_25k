@@ -1,7 +1,7 @@
-// select all items and store in a variable
-const pancakeType = document.querySelector("#type"); // console.log(toppings
-const toppings = document.querySelectorAll(".topping"); // used class name
-const extras = document.querySelectorAll(".extra"); // used class name for
+
+const pancakeType = document.querySelector("#type");
+const toppings = document.querySelectorAll(".topping");
+const extras = document.querySelectorAll(".extra");
 
 const pancakeForm = document.querySelector("#pancakeForm");
 const totalPriceDisplay = document.querySelector("#totalPriceDisplay");
@@ -17,14 +17,15 @@ const changeHandler = (event) => {
     document.getElementById("type").selectedOptions[0].dataset.price
   );
 
-  // Do toppings logic here and deliveryfee logic here
+  // toppings 
   const toppingsTotal = [
     ...document.querySelectorAll(".topping:checked"),
   ].reduce((acc, topping) => {
     return acc + parseFloat(topping.dataset.price);
   }, 0);
 
-  // Do extras logic here and deliveryfee logic here
+
+  // extras
   const extrasTotal = [...document.querySelectorAll(".extra:checked")].reduce(
     (acc, extra) => {
       return acc + parseFloat(extra.dataset.price);
@@ -32,6 +33,7 @@ const changeHandler = (event) => {
     0
   );
 
+  
   let deliveryfee = 0;
   const deliveryChecked = document.querySelector(".delivery:checked");
   console.log("DeliveryChecked: ", deliveryChecked.dataset.price);
@@ -71,13 +73,8 @@ document.getElementById("seeOrder").addEventListener("click", () => {
               .join(",")
           : "No Toppings"
       }</p>
-      
       <p><strong>Delivery:</strong> ${deliveryMethod}</p>
-      <p><strong>Total Price:</strong> ${totalPriceDisplay.textContent}</p>
-
-    
-
-  `;
+      <p><strong>Total Price:</strong> ${totalPriceDisplay.textContent}</p>`;
 
   document.querySelector("#orderSummary").style.backgroundColor = "#eee";
 });

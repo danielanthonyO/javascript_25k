@@ -1,0 +1,37 @@
+/* All Orders Page */
+#ordersList {
+    margin-top: 20px;
+}
+
+.order-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-item p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.status-dropdown {
+    margin-top: 10px;
+    padding: 6px;
+}
+
+#goBackButton {
+    margin-top: 20px;
+    background-color: #d54215;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#goBackButton:hover {
+    background-color: #c43110;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

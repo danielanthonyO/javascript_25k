@@ -46,20 +46,20 @@ If `validUser === true`, call the callback with `"Welcome, [username]!"` after *
 If `validUser === false`, call the callback immediately with `"Invalid login"`  
 ********************************************************************/
 
-function loginUser(username, validUser, callback) {
-    // Your code here
-    if (validUser){
-        setTimeout(() => {
-            callback(`Welcome, ${username}!`);
-        }, 1000); // 1 seconds delay
-    }callback('Invalid login')
-}
+// function loginUser(username, validUser, callback) {
+//     // Your code here
+//     if (validUser){
+//         setTimeout(() => {
+//             callback(`Welcome, ${username}!`);
+//         }, 1000); // 1 seconds delay
+//     }callback('Invalid login')
+// }
 
-// Test Cases
-loginUser("Sam", true, (message) => console.log(message));
-// Expected: "Welcome, Sam!" (after 1 sec)
-loginUser("Alex", false, (message) => console.log(message));
-// Expected: "Invalid login" (immediately)
+// // Test Cases
+// loginUser("Sam", true, (message) => console.log(message));
+// // Expected: "Welcome, Sam!" (after 1 sec)
+// loginUser("Alex", false, (message) => console.log(message));
+// // Expected: "Invalid login" (immediately)
 
 
 /* 
@@ -68,10 +68,18 @@ Task 4: Fetch User Data (Promise)
 Convert `fetchUserData(shouldFail)` to return a Promise  
 If `shouldFail === false`, **resolve after 2 seconds** with `"User data retrieved"`  
 If `shouldFail === true`, **reject after 2 seconds** with `"Error fetching user data"`  
-*/
+************************************************************/
 
 // function fetchUserData(shouldFail) {
-//     // Your code here
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (!shouldFail) {
+//                 resolve("User data retrieved");
+//             } else {
+//                 reject("Error fetching user data");
+//             }
+//         }, 2000);
+//     });
 // }
 
 // // Test Cases
@@ -90,16 +98,17 @@ Convert `processOrderPromise()` to return a promise chain:
    Wait **1 sec** → Resolve `"Order ready for pickup"`  
 */
 
-// function processOrderPromise() {
-//     // Your code here
-// }
+function processOrderPromise() {
+    // Your code here
+    
+}
 
-// // Test Case
-// processOrderPromise().then(console.log);
-// // Expected: 
-// // "Order received" (after 2 sec)
-// // "Preparing order" (after 3 more sec)
-// // "Order ready for pickup" (after 1 more sec)
+// Test Case
+processOrderPromise().then(console.log);
+// Expected: 
+// "Order received" (after 2 sec)
+// "Preparing order" (after 3 more sec)
+// "Order ready for pickup" (after 1 more sec)
 
 
 /* 

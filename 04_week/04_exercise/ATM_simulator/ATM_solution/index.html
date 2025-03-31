@@ -6,29 +6,37 @@
     <link rel="stylesheet" href="styles.css">
     <title>ATM Simulator</title>
 </head>
+
 <body>
+<!-- Login Section -->
+        <div class="login-container" id="login-container">
+            <h2>Enter Your PIN</h2>
+            <div class="input-group">
+                <input type="password" id="pin-input" placeholder="Enter 4-digit PIN">
+                <button type="button" class="login-btn" onclick="login()">Login</button>
+            </div>
+            <p class="message" id="login-message"></p>
+        </div>
 
     <div class="atm-container">
         <h2>ATM Simulator</h2>
-
-        <!-- Balance Display Section -->
         <div class="balance-section">
             Balance: <span id="balance">0</span>€
         </div>
 
-        <!-- Deposit Section -->
+<!-- Deposit Section -->
         <div class="input-group">
             <input type="number" id="deposit-amount" placeholder="Enter deposit amount">
             <button class="deposit-btn" onclick="deposit()">Deposit</button>
         </div>
 
-        <!-- Withdraw Section -->
+<!-- Withdraw Section -->
         <div class="input-group">
             <input type="number" id="withdraw-amount" placeholder="Enter a valid amount">
             <button class="withdraw-btn" onclick="withdraw()">Withdraw</button>
         </div>
 
-        <!-- Message Area -->
+<!-- Message Area -->
         <p class="message" id="message"></p>
     </div>
 

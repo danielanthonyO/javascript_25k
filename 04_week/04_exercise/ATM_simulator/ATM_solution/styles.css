@@ -1,104 +1,135 @@
-        /* General Styles */
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #c0d2e5;
-            /* text-align: center; */
-            padding: 20px;
-            margin: 10%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}      
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c0d2e5;
+    padding: 20px;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        /* ATM Container */
-        .atm-container {
-            background: #232321;
-            padding: 20px;
-            border-radius: 12px;
-            max-width: 300px;
-            align-items: center;
-            margin: auto;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
+.login-container {
+    background: #232321;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+    border-bottom: 3px solid #b60707;
+}
 
-        h2 {
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            color: #fff;
-            border-bottom: 3px solid #b60707;
-        }
+.input-group {
+    margin-bottom: 15px; /* Input Fields */
+}
 
-        /* Balance Display */
-        .balance-section {
-            /* background: #1ABC9C; */
-            padding: 20px;
-            font-size: 22px;
-            font-weight: bold;
-            color: #fff;
-            margin-bottom: 20px;
-        }
+input {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
 
-        /* Input Fields */
-        .input-group {
-            margin-bottom: 15px;
-        }
 
-        input {
-            padding: 10px;
-            width: 50%;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            text-align: center;
-        }
 
-        /* Buttons */
-        button {
-            padding: 12px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 16px;
-            margin-top: 10px;
-            transition: 0.3s;
-        }
+/* ATM Container */
+.atm-container {
+    background: #232321;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    align-items: center;
+    margin: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
 
-        .deposit-btn {
-            background-color: #27AE60;
-            color: white;
-            margin-left: 10px;
-            margin-right: 8px;
-        }
+h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    color: #fff;
+    border-bottom: 3px solid #b60707;
+}
 
-        .withdraw-btn {
-            background-color: #E74C3C;
-            color: white;
-            margin-left: 12px;
-        }
+/* Balance Display */
+.balance-section {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
-        button:hover {
-            opacity: 0.8;
-        }
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+}
 
-        /* Message Area */
-        .message {
-            margin-top: 15px;
-            font-weight: bold;
-            padding: 10px;
-            border-radius: 5px;
-        }
+input {
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
 
-        .error {
-            background-color: #E74C3C;
-            color: white;
-        }
+/* Buttons */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
 
-        .success {
-            /* background-color: #27AE60; */
-            color: white;
-        }
+.deposit-btn {
+    background-color: #27AE60;
+    color: white;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.withdraw-btn {
+    background-color: #E74C3C;
+    color: white;
+    margin-left: 12px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Message Area */
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    background-color: #E74C3C;
+    color: white;
+}
+
+.success {
+    /* background-color: #27AE60; */
+    color: white;
+}
+
+
+

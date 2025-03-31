@@ -13,7 +13,7 @@
       </div>
 
       <div class="form-container">
-        <h2>Customize Your Pancake</h2>
+        <h1>Customize Your Pancake</h1>
 
         <form id="pancakeForm">
           <!-- Customer Name -->
@@ -22,13 +22,11 @@
             type="text"
             id="customerName"
             name="customerName"
-            placeholder="Enter your name"
-          />
+            placeholder="Enter your name"/>
 
           <!-- Pancake Type -->
           <label for="type">Choose your pancake type:</label>
           <select id="type" name="pancakeType">
-            >
             <option data-price="5">Classic - 5€</option>
             <option data-price="6">Chocolate - 6€</option>
             <option data-price="7">Blueberry - 7€</option>
@@ -93,13 +91,18 @@
 
           <!-- See Order Button -->
           <button type="button" id="seeOrder">See Order</button>
-        </form>
+        
+        <button type="button" id="confirmOrder">Confirm Order</button>
 
         <!-- Order Summary Display -->
-        <div id="orderSummary">
-          <h3>Order Summary</h3>
-          <p id="summaryText">Your order details will appear here.</p>
+        <div class="order_summary_container">
+          <div id="orderSummary">
+            <h2>Order Summary</h2>
+            <p id="summaryText">Your order details will appear here.</p>
+          </div>
         </div>
+      </form>
+
       </div>
     </div>
 
